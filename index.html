@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WATERLILY | Employee Time Sheet Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <img id="logo" src="" alt="" width="400px">
+    <form action="https://formsubmit.co/totosrostering@gmail.com" 
+    method="POST">
+      <h2>Employee Time Sheet Form</h2>
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+        <label for="time-in"></label>
+        <select id="in-or-out" name="in or out">
+            <option value="Clock In">Clock In</option>
+            <option value="Clock Out">Clock Out</option>
+        </select>
+        <select id="time-in-hour" name="time-in-hour">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select id="time-in-minute" name="time-in-minute">
+            <option value=":00">:00</option>
+            <option value=":15">:15</option>
+            <option value=":30">:30</option>
+            <option value=":45">:45</option>
+        </select>
+        <select id="time-in-AMPM" name="time-in-AMPM">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
